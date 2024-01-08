@@ -40,11 +40,11 @@ export default function Hero() {
         Fell <br /> Authentic <br /> Peace
         </motion.div>
     <motion.div 
-    className="my-6 font-poppins"
+    className="mt-18 font-poppins"
     variants={{}}
     >
       <Link to="shop" >
-        <button className="p-3 lg:p-4 text-sm bg-zinc-950 text-zinc-300 flex items-center gap-3 justify-center ">
+        <button className="p-3 lg:p-4 text-sm lg:text-lg bg-zinc-950 text-zinc-300 flex items-center gap-3 justify-center ">
             Shop Now
             <FontAwesomeIcon icon={faArrowRight} className="text-md rotate-[-45deg] block "/>
         </button>

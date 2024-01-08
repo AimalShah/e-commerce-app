@@ -14,7 +14,7 @@ export default function Header() {
     }
    }
   return (
-    <div className="bg-white font-poppins font-semobold sticky top-0">
+    <div className="bg-white font-poppins font-semobold sticky top-0 p-2">
         <div className="container px-4 mx-auto my-6 flex justify-between text-xl">
             <div className="hidden lg:block font-light">
             <nav className="flex list-none gap-4 text-zinc-600">
