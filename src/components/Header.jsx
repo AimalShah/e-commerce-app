@@ -32,7 +32,9 @@ export default function Header() {
                 </nav> 
             </div>
             <div className="font-semibold">
+                <Link to="/" >
                eSTORE
+                </Link>
             </div>
             <div className="flex gap-4">
             <div className="cursor-pointer lg:hidden"
@@ -62,7 +64,7 @@ export default function Header() {
                  stiffness: 100 ,
                   ease: "linear",
                 duration:0.5 }}
-                className="absolute h-fit rounded-md right-2 md:right-10 text-center top-6 list-none bg-light-blue p-4 w-40 lg:hidden text-zinc-600">
+                className="shadow shadow-white absolute h-fit rounded-md right-2 md:right-10 text-center top-6 list-none bg-light-blue p-4 w-40 lg:hidden text-zinc-600">
                 <nav className="flex flex-col gap-4 ms-4">
                     <li>
                         <Link to="/">
@@ -70,7 +72,7 @@ export default function Header() {
                         </Link>
                      </li>
                     <li>
-                        <a href="#">Shop</a>
+                        <Link to="/shop">Shop</Link>
                     </li>
                     <li>
                         <a href="#">About</a>
