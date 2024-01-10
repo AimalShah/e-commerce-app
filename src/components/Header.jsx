@@ -1,6 +1,6 @@
 import { useState } from "react"
 import {delay, motion} from "framer-motion"
-import { Link } from "react-router-dom"
+import { Link , NavLink} from "react-router-dom"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars , faXmark , faCartShopping} from "@fortawesome/free-solid-svg-icons"
 
@@ -18,17 +18,37 @@ export default function Header() {
         <div className="container px-4 mx-auto my-6 flex justify-between text-xl">
             <div className="hidden lg:block font-light">
             <nav className="flex list-none gap-4 text-zinc-600">
-                    <li className="hover:bg-light-blue p-2 rounded "> 
-                        <Link to="/">
+                        <NavLink to="/"
+                        className={({isActive}) => 
+                            isActive ? "bg-light-blue rounded" :
+                            "hover:bg-light-blue"
+                        }
+                        >
+                    <li className="p-2 rounded"> 
                             Home
-                        </Link>
                      </li>
-                    <li className="hover:bg-light-blue p-2 rounded">
-                        <Link to="/shop">Shop</Link>
-                    </li>
-                    <li className="hover:bg-light-blue p-2 rounded">
-                        <a href="#">About</a>
-                    </li>
+                        </NavLink>
+                        <NavLink to="/shop"
+                        className={({isActive}) => 
+                            isActive ? "bg-light-blue rounded" :
+                            "hover:bg-light-blue"
+                        }
+                        >
+                    <li className="p-2 rounded"> 
+                           Shop
+                     </li>
+                        </NavLink>
+                        <NavLink to="/About"
+                        className={({isActive}) => 
+                            isActive ? "bg-light-blue rounded" :
+                            "hover:bg-light-blue"
+                        }
+                        >
+                    <li className="p-2 rounded"> 
+                          About
+                     </li>
+                 </NavLink>
+
                 </nav> 
             </div>
             <div className="font-semibold">
