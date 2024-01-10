@@ -6,7 +6,7 @@ export default function Feautred() {
  
   const {data , loading ,  error} = useFetch("https://fakestoreapi.com/products/category/men's clothing")
   
-  if(loading) return <div>Loading...</div>
+
   if(error) return <div>Error</div>
   
   console.log("DATA : " + data.data)
@@ -16,7 +16,9 @@ export default function Feautred() {
         Featured Collection
     </div>
     <div className="flex flex-wrap gap-4 justify-center items-center">
+    
        {
+        loading ? <div>Loading...</div> :
           data.map((product) => (
               <ProductCard 
               id={product.id}
