@@ -9,7 +9,7 @@ export default function Hero() {
   const demoVariants = {
     animate: {
       x: "0px",
-      opacity:"1",
+      opacity: 1,
       transition: {
         type : "spring",
         staggerChildren: 0.8,

@@ -24,7 +24,7 @@ export default function Header() {
                         </Link>
                      </li>
                     <li className="hover:bg-light-blue p-2 rounded">
-                        <a href="#">Shop</a>
+                        <Link to="/shop">Shop</Link>
                     </li>
                     <li className="hover:bg-light-blue p-2 rounded">
                         <a href="#">About</a>
@@ -57,7 +57,7 @@ export default function Header() {
                 isMenuOpen ?
                 <motion.div 
                 initial={{y:200 , opacity:0}}
-                animate={{y:20 , opacity:1}}
+                animate={{y:60 , opacity:1}}
                 transition={{type : "just" ,
                  stiffness: 100 ,
                   ease: "linear",

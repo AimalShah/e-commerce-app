@@ -5,7 +5,7 @@ import Button from "./Button"
 
 export default function About() {
   return (
-    <div className='text-center my-10 px-0 py-20 border border-red-900 my-20 border bg-whitesh flex flex-col justify-center items-center gap-12'>
+    <div className='text-center my-10 px-0 py-20 my-20 border bg-whitesh flex flex-col justify-center items-center gap-12'>
       <div className='font-heading text-5xl lg:text-8xl'>
       What do we do
      </div>  
