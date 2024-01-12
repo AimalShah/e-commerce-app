@@ -21,6 +21,8 @@ export default function Feautred() {
         loading ? <div>Loading...</div> :
           data.map((product) => (
               <ProductCard 
+              link={`shop/product/${product.id}`}
+              description={product.description}
               id={product.id}
               key={product.id}
               title={product.title} 

@@ -34,7 +34,7 @@ export default function Hero() {
             Just Droped
         </motion.div>
         <motion.div 
-        className="text-6xl md:text-7xl lg:text-9xl xs:text-4xl mb-9"
+        className="z-index-2 text-6xl md:text-7xl lg:text-9xl xs:text-4xl mb-9"
         initial={{x:-300 , opacity : 0}}
         variants={demoVariants}
         >

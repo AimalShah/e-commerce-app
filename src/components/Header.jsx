@@ -3,9 +3,17 @@ import {delay, motion} from "framer-motion"
 import { Link , NavLink} from "react-router-dom"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars , faXmark , faCartShopping} from "@fortawesome/free-solid-svg-icons"
+import { useContext } from "react"
+import CartContext from "../context/CartContext"
+
+
 
 export default function Header() {
-    const [isMenuOpen , setMenuOpen] = useState(false)
+const {items} = useContext(CartContext)
+
+const [isMenuOpen , setMenuOpen] = useState(false)
+const {item} = useContext(CartContext);
+
    const toggleMenu = () => {
     if(isMenuOpen === false){
         setMenuOpen(true)
@@ -13,6 +21,9 @@ export default function Header() {
         setMenuOpen(false)
     }
    }
+
+
+
   return (
     <div className="bg-white font-poppins font-semobold relative top-0 p-2">
         <div className="container px-4 mx-auto my-6 flex justify-between text-xl">
@@ -68,9 +79,11 @@ export default function Header() {
                 <p className="hidden lg:block">
                     account
                 </p>
+                    <Link to='/cart'> 
                 <p className="bg-light-blue p-2 text-sm rounded-full">
-                    0
+                    {items.length}
                 </p>
+                    </Link>
             </div>
             </div>
             
