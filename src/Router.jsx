@@ -6,6 +6,7 @@ import Layout from './Layout'
 import Cart from './pages/Cart'
 import SingleProduct from './pages/SingleProduct'
 import ShopPage from './pages/ShopPage'
+import AboutPage from './pages/AboutPage'
 export default function Router() {
     const router = createBrowserRouter(
         createRoutesFromElements(
@@ -17,6 +18,7 @@ export default function Router() {
             <Route path='product/:id' element={<SingleProduct />} />
             </Route>
             <Route path='cart' element={<Cart />} />
+            <Route path='about' element={<AboutPage />} />
             </Route>
         )
     )

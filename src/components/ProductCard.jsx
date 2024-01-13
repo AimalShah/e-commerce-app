@@ -8,7 +8,6 @@ export default function ProductCard({title , image ,price , id , description , l
     const {addToCart , addDetails} = useContext(CartContext)
     
     const handleClick = () => {
-        addToCart(title , image , price , id)
         addDetails(title , id , description , price , image)
     }
   return (

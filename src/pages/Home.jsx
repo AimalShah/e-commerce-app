@@ -10,7 +10,16 @@ export default function Home() {
     <div className='bg-light-blue'>
       <Hero />
       <About />
-      <Feautred />
+      <Feautred name="Featured Collection" />
+      <div className='p-10 bg-whitesh'>
+        <Feautred  name="Popular Collection"/>
+      </div>
+      <div className='text-center p-10'>
+        <h1 className='text-6xl lg:text-8xl font-heading'>
+          INSTAGRAM
+        </h1>
+        <p class="font-poppins mt-4 text-2xl ">#estore</p>
+      </div>
     </div>
   )
 }

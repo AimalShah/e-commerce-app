@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import useFetch from "../hooks/useFetch"
 import ProductCard from "./ProductCard"
 
-export default function Feautred() {
+export default function Feautred({name}) {
  
   const {data , loading ,  error} = useFetch("https://fakestoreapi.com/products/category/men's clothing")
   
@@ -13,7 +13,7 @@ export default function Feautred() {
   return (
 <div className="container mx-auto flex flex-col gap-16 p-4">
     <div className="text-5xl font-heading text-center md:text-5xl lg:text-6xl">
-        Featured Collection
+      {name}
     </div>
     <div className="flex flex-wrap gap-4 justify-center items-center">
     

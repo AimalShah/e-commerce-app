@@ -49,7 +49,7 @@ const {item} = useContext(CartContext);
                            Shop
                      </li>
                         </NavLink>
-                        <NavLink to="/About"
+                        <NavLink to="/about"
                         className={({isActive}) => 
                             isActive ? "bg-light-blue rounded" :
                             "hover:bg-light-blue"
@@ -108,7 +108,7 @@ const {item} = useContext(CartContext);
                         <Link to="/shop">Shop</Link>
                     </li>
                     <li>
-                        <a href="#">About</a>
+                        <Link to="/about">About</Link>
                     </li>
                 </nav> 
                 </motion.div>
